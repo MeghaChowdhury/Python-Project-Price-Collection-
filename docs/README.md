@@ -51,20 +51,21 @@ A unique constraint on `(Product, Date, Seller)` prevents duplicate entries when
 ### 1) Install dependencies
 
 pip install -r requirements.txt
-2) Create the database
+
+### 2) Create the database
 Run the SQL schema located in the database folder using MySQL Workbench or MySQL CLI.
 
 Example:
 
-sql
-Copy code
+sql Copy code :-
 SOURCE database/schema.sql;
-3) Configure database connection
+
+### 3) Configure database connection
 Database credentials (host, user, password) must be configured locally inside the ETL scripts or via a local configuration file.
 
 ⚠️ Credentials are not stored in this repository for security reasons.
 
-4) Run ETL scripts
+### 4) Run ETL scripts
 Each ETL script inserts price data into the shared PRICE table.
 
 Example:
