@@ -5,7 +5,7 @@ import mysql.connector
 DB_CONFIG = {
     "host": "localhost",
     "user": "root",
-    "password": "Megha616@",
+    "password": "Your_Password",
     "port": 3306
 }
 
@@ -47,3 +47,4 @@ def create_price_table():
 if __name__ == "__main__":
     create_database()
     create_price_table()
+
