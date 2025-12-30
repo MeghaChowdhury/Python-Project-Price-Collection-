@@ -117,14 +117,3 @@ Each component (ETL, visualization, notification) interacts with the shared `PRI
 
 ```
 
----
-
-## 🔴 IMPORTANT (do this now)
-1. Paste this into your **root README**
-2. Rename the file to **`README.md`**
-3. Commit
-
-Once you do that, your GitHub homepage will look **clean, professional, and complete**.
-
-If you want, send me a **new screenshot after committing**, and I’ll confirm it’s perfect 💙
-```
