@@ -20,13 +20,13 @@ Each execution of the ETL pipeline stores prices together with the execution dat
 
 ## Repository Structure
 
-.
-├── data/ # Temporary data or CSV outputs
-├── database/ # Database schema and helper scripts
-├── docs/ # Project documentation (LaTeX / report)
-├── etl/ # ETL scripts for different platforms
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+
+- data - Temporary data or CSV outputs
+- database - Database schema and helper scripts
+- docs - Project documentation (LaTeX / report)
+- etl - ETL scripts for different platforms
+- requirements.txt - Python dependencies
+- README.md - Project documentation
 
 
 ---
