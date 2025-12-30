@@ -74,20 +74,20 @@ python etl/ebay_etl.py
 ```
 Each run stores a daily snapshot of prices.
 
-Development Notes
-The database schema is shared across all components
+#### Development Notes
+- The database schema is shared across all components
 
-Historical prices are tracked using the Date column
+- Historical prices are tracked using the Date column
 
-The project is designed to be easily extended or deployed to cloud environments
+- The project is designed to be easily extended or deployed to cloud environments
 
-Academic Context
-This project was developed for a university course focusing on:
+#### Academic Context
+- This project was developed for a university course focusing on:
 
-Python programming
+- Python programming
 
-ETL pipelines
+- ETL pipelines
 
-Relational databases
+- Relational databases
 
-Data validation and reproducibility
+- Data validation and reproducibility
