@@ -49,8 +49,9 @@ A unique constraint on `(Product, Date, Seller)` prevents duplicate entries when
 ## Setup Instructions
 
 ### 1) Install dependencies
-
+```bash
 pip install -r requirements.txt
+```
 
 ### 2) Create the database
 Run the SQL schema located in the database folder using MySQL Workbench or MySQL CLI.
