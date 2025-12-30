@@ -58,8 +58,7 @@ Run the SQL schema located in the database folder using MySQL Workbench or MySQL
 
 Example:
 
-sql Copy code :-
-SOURCE database/schema.sql;
+SOURCE database/prices_db.sql;
 
 ### 3) Configure database connection
 Database credentials (host, user, password) must be configured locally inside the ETL scripts or via a local configuration file.
@@ -70,10 +69,9 @@ Database credentials (host, user, password) must be configured locally inside th
 Each ETL script inserts price data into the shared PRICE table.
 
 Example:
-
-bash
-Copy code
+```
 python etl/ebay_etl.py
+```
 Each run stores a daily snapshot of prices.
 
 Development Notes
