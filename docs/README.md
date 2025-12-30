@@ -28,8 +28,6 @@ Each execution of the ETL pipeline stores prices together with the execution dat
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
 
-yaml
-Copy code
 
 ---
 
