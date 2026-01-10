@@ -1,7 +1,7 @@
 # Recipient configuration
-recipients = manager@example.com, analyst@example.com, mariam.uf98@gmail.com
+recipients = manager@example.com, analyst@example.com
 
-# SMTP Server configuration (Example for Gmail)
+# SMTP Server configuration 
 smtp_server = smtp.gmail.com
 smtp_port = 587
 smtp_user = your_email@gmail.com
