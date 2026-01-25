@@ -5,10 +5,10 @@ import mysql.connector
 
 # all python codes should be in the same folder + products file
 SCRIPTS = [
-    "etl/Amazon_ETL.py",
-    "etl/Ebay_ETL.py",
-    "etl/Idealo_ETL.py",
-    "etl/our_company_run_today.py",
+    "Amazon_ETL.py",
+    "Ebay_ETL.py",
+    "Idealo_ETL.py",
+    "our_company_run_today.py",
 ]
 
 DB_CONFIG = {
@@ -62,6 +62,7 @@ if __name__ == "__main__":
 
     db_summary(today)
     print("\n All ETLs finished.")
+
 
 
 
