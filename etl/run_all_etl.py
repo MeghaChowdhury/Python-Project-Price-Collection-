@@ -14,7 +14,7 @@ SCRIPTS = [
 DB_CONFIG = {
     "host": "localhost",
     "user": "root",
-    "password": "your_password",
+    "password": "Megha616@",
     "port": 3306,
     "database": "price_collection",
 }
@@ -25,7 +25,7 @@ PRICE_TABLE = "PRICE"
 def run_script(path: str) -> int:
     """Run a scraper script exactly as-is."""
     print(f"\n===== RUNNING: {path} =====")
-    result = subprocess.run([sys.executable, path], capture_output=False)
+    result = subprocess.run([sys.executable, path], cwd="etl", capture_output=False)
     return result.returncode
 
 
@@ -62,4 +62,5 @@ if __name__ == "__main__":
 
     db_summary(today)
     print("\n All ETLs finished.")
+
 
