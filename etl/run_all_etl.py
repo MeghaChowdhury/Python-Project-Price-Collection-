@@ -13,7 +13,7 @@ SCRIPTS = [
 
 DB_CONFIG = {
     "host": "localhost",
-    "user": "root",
+    "user": "etl_user",
     "password": "Megha616@",
     "port": 3306,
     "database": "price_collection",
@@ -62,5 +62,6 @@ if __name__ == "__main__":
 
     db_summary(today)
     print("\n All ETLs finished.")
+
 
 
