@@ -19,7 +19,7 @@ HEADERS = { # makes the request look like a normal browser so eBay doesn’t blo
 DB_CONFIG = { # credentials for MySQL.
     "host": "localhost",
     "user": "root",
-    "password": "Megha616@",     # <-- change before use
+    "password": "your_password",     # <-- change before use
     "port": 3306,
     "database": "price_collection", #change according to the database name u have
 }
@@ -286,3 +286,4 @@ def run_ebay_etl(products_xlsx="products.xlsx", save_csv=True, write_db=True):
 if __name__ == "__main__":
     run_ebay_etl(products_xlsx="products.xlsx", save_csv=False, write_db=True) # save csv = False because we don't need csv for now
     # since we are already saving it in database and if needed we can export csv from our database
+
