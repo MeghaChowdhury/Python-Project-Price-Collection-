@@ -36,7 +36,7 @@ def db_summary(today_iso: str):
 
     cur.execute(f"""
         SELECT Seller, COUNT(*) AS cnt
-        FROM {PRICE_TABLE}
+        FROM {DB_CONFIG["database"]}.{PRICE_TABLE}
         WHERE Date = %s
         GROUP BY Seller
         ORDER BY Seller;
@@ -62,6 +62,7 @@ if __name__ == "__main__":
 
     db_summary(today)
     print("\n All ETLs finished.")
+
 
 
 
