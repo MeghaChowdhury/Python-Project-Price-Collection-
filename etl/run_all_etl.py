@@ -1,14 +1,18 @@
+import os
 import sys
 import subprocess
 import datetime as dt
 import mysql.connector
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
 # all python codes should be in the same folder + products file
 SCRIPTS = [
-    "Amazon_ETL.py",
-    "Ebay_ETL.py",
-    "Idealo_ETL.py",
-    "our_company_run_today.py",
+    os.path.join(BASE_DIR, "Amazon_ETL.py"),
+    os.path.join(BASE_DIR, "Ebay_ETL.py"),
+    os.path.join(BASE_DIR, "Idealo_ETL.py"),
+    os.path.join(BASE_DIR, "our_company_run_today.py"),
 ]
 
 DB_CONFIG = {
@@ -62,6 +66,7 @@ if __name__ == "__main__":
 
     db_summary(today)
     print("\n All ETLs finished.")
+
 
 
 
