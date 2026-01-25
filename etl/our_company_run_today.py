@@ -6,7 +6,7 @@ from datetime import date
 DB_CONFIG = {
     "host": "localhost",
     "user": "root",
-    "password": "Megha616@",
+    "password": "your_password",
     "port": 3306,
     "database": "price_collection",
 }
@@ -100,3 +100,4 @@ def run_our_company_today(excel_path="products.xlsx"):
 
 if __name__ == "__main__":
     run_our_company_today("products.xlsx")
+
