@@ -292,9 +292,7 @@ def send_email(rank_changes, pdf_filename):
         print(f"ERROR: Failed to send email: {e}")
 
 
-# ============================================================
-# MAIN EXECUTION
-# ============================================================
+#execution
 
 def main():
     """
@@ -310,12 +308,12 @@ def main():
     print("=" * 70)
 
     try:
-        # Step 1: Connect to database
+        # Connect to database
         print("\n[1/5] Connecting to database...")
         db = mysql.connector.connect(**db_config)
         print("✓ Database connection established")
 
-        # Step 2: Load data
+        # Load data
         print("\n[2/5] Loading price data from PRICE table...")
         query = """
         SELECT Product, Date, Seller, Price
@@ -334,15 +332,15 @@ def main():
         print(f"✓ Sellers: {df['Seller'].nunique()}")
         print(f"✓ Date range: {df['Date'].min()} to {df['Date'].max()}")
 
-        # Step 3: Generate PDF visualization
+        # Generate PDF visualization
         print("\n[3/5] Generating PDF visualization report...")
         pdf_filename = generate_pdf_report(df)
 
-        # Step 4: Check for rank changes
+        # Check for rank changes
         print("\n[4/5] Analyzing rank changes...")
         rank_changes = check_rank_changes(df)
 
-        # Step 5: Send email if necessary
+        # Send email if necessary
         print("\n[5/5] Processing email notification...")
         send_email(rank_changes, pdf_filename)
 
@@ -368,3 +366,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
