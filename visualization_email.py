@@ -10,9 +10,6 @@ from email.mime.base import MIMEBase
 from email import encoders
 from datetime import datetime
 
-# ============================================================
-# CONFIGURATION
-# ============================================================
 
 # Database connection configuration
 db_config = {
@@ -36,9 +33,7 @@ except FileNotFoundError:
     settings = None
 
 
-# ============================================================
-# TASK 3: VISUALIZATION - GENERATE PDF REPORT
-# ============================================================
+#task 3 - generates visualizations + pdf reports
 
 def generate_pdf_report(df):
     """
@@ -170,9 +165,7 @@ def generate_pdf_report(df):
     return filename
 
 
-# ============================================================
-# TASK 4: EMAIL NOTIFICATION FOR RANK CHANGES
-# ============================================================
+# email notification for changes in price
 
 def check_rank_changes(df):
     """
@@ -307,9 +300,9 @@ def main():
     """
     Main workflow:
     1. Connect to database and load price data
-    2. Generate PDF visualization (Task 3)
-    3. Check for rank changes (Task 4)
-    4. Send email notification if ranks changed (Task 4)
+    2. Generate PDF visualization 
+    3. Check for rank changes 
+    4. Send email notification if ranks changed 
     """
 
     print("=" * 70)
@@ -373,4 +366,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
