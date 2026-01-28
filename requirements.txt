@@ -4,3 +4,4 @@ beautifulsoup4
 mysql-connector-python
 openpyxl
 selenium
+matplotlib
