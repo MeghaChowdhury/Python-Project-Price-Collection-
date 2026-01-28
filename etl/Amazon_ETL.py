@@ -16,7 +16,7 @@ def get_db():
     return mysql.connector.connect(
         host="localhost",
         user="etl_user",
-        password="Megha616@",
+        password="your_pass",
         database="price_collection"
     )
 
@@ -132,5 +132,6 @@ def run_amazon_today():
 # when this file is executed directly.
 if __name__ == "__main__":
     run_amazon_today()
+
 
 
