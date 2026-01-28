@@ -10,7 +10,7 @@ def get_db(): # Every time you call get_db(), it creates a new connection to MyS
     return mysql.connector.connect(
         host="localhost",
         user="etl_user",
-        password="Megha616@",  # change here
+        password="your_pass",  # change here
         database="price_collection"  # change to whatever database name u have
     )
 
@@ -112,5 +112,6 @@ if __name__ == "__main__":
         # Our company can be inserted by a separate script or by Amazon ETL.
 
     print("\n Idealo scraping completed.")
+
 
 
