@@ -1,0 +1,381 @@
+ID,Product,Date,Seller,Price
+4,"Apple Watch Ultra 2",2025-12-31,Ebay,579.00
+5,"Apple Watch Ultra 2",2025-12-31,"Our company",839.99
+6,"Apple Watch Ultra",2025-12-31,Ebay,658.00
+7,"Apple Watch Ultra",2025-12-31,"Our company",689.99
+8,"Garmin Epix™ Pro Gen 2",2025-12-31,Ebay,759.00
+9,"Garmin Epix™ Pro Gen 2",2025-12-31,"Our company",699.99
+10,"Garmin Venu 3S",2025-12-31,Ebay,481.98
+11,"Garmin Venu 3S",2025-12-31,"Our company",389.99
+12,"Garmin Venu 3",2025-12-31,Ebay,359.99
+13,"Garmin Venu 3",2025-12-31,"Our company",409.99
+14,"Garmin fēnix® 7X Pro",2025-12-31,Ebay,520.00
+15,"Garmin fēnix® 7X Pro",2025-12-31,"Our company",699.99
+16,"Garmin fēnix® 7 Pro",2025-12-31,Ebay,549.90
+17,"Garmin fēnix® 7 Pro",2025-12-31,"Our company",619.99
+18,"Garmin Forerunner 965",2025-12-31,Ebay,911.90
+19,"Garmin Forerunner 965",2025-12-31,"Our company",559.99
+20,"Garmin Forerunner 255",2025-12-31,Ebay,219.50
+21,"Garmin Forerunner 255",2025-12-31,"Our company",239.99
+22,"Withings ScanWatch 2",2025-12-31,Ebay,358.00
+23,"Withings ScanWatch 2",2025-12-31,"Our company",129.99
+44,"Apple Watch Ultra 2",2025-12-30,Idealo,675.00
+45,"Apple Watch Ultra 2",2025-12-30,"Our company",839.99
+46,"Apple Watch Ultra",2025-12-30,Idealo,779.95
+47,"Apple Watch Ultra",2025-12-30,"Our company",689.99
+48,"Garmin Epix™ Pro Gen 2",2025-12-30,Idealo,490.44
+49,"Garmin Epix™ Pro Gen 2",2025-12-30,"Our company",699.99
+50,"Garmin Venu 3S",2025-12-30,Idealo,319.00
+51,"Garmin Venu 3S",2025-12-30,"Our company",389.99
+52,"Garmin Venu 3",2025-12-30,Idealo,299.99
+53,"Garmin Venu 3",2025-12-30,"Our company",409.99
+54,"Garmin fēnix® 7X Pro",2025-12-30,Idealo,508.47
+55,"Garmin fēnix® 7X Pro",2025-12-30,"Our company",699.99
+56,"Garmin fēnix® 7 Pro",2025-12-30,Idealo,468.50
+57,"Garmin fēnix® 7 Pro",2025-12-30,"Our company",619.99
+58,"Garmin Forerunner 965",2025-12-30,Idealo,469.95
+59,"Garmin Forerunner 965",2025-12-30,"Our company",559.99
+60,"Garmin Forerunner 255",2025-12-30,Idealo,199.90
+61,"Garmin Forerunner 255",2025-12-30,"Our company",239.99
+62,"Withings ScanWatch 2",2025-12-30,Idealo,273.99
+63,"Withings ScanWatch 2",2025-12-30,"Our company",129.99
+64,"Apple Watch Ultra 2",2026-01-01,Ebay,579.00
+65,"Apple Watch Ultra 2",2026-01-01,"Our company",839.99
+66,"Apple Watch Ultra",2026-01-01,Ebay,658.00
+67,"Apple Watch Ultra",2026-01-01,"Our company",689.99
+68,"Garmin Epix™ Pro Gen 2",2026-01-01,Ebay,759.00
+69,"Garmin Epix™ Pro Gen 2",2026-01-01,"Our company",699.99
+70,"Garmin Venu 3S",2026-01-01,Ebay,481.98
+71,"Garmin Venu 3S",2026-01-01,"Our company",389.99
+72,"Garmin Venu 3",2026-01-01,Ebay,359.99
+73,"Garmin Venu 3",2026-01-01,"Our company",409.99
+74,"Garmin fēnix® 7X Pro",2026-01-01,Ebay,520.00
+75,"Garmin fēnix® 7X Pro",2026-01-01,"Our company",699.99
+76,"Garmin fēnix® 7 Pro",2026-01-01,Ebay,549.90
+77,"Garmin fēnix® 7 Pro",2026-01-01,"Our company",619.99
+78,"Garmin Forerunner 965",2026-01-01,Ebay,911.90
+79,"Garmin Forerunner 965",2026-01-01,"Our company",559.99
+80,"Garmin Forerunner 255",2026-01-01,Ebay,219.50
+81,"Garmin Forerunner 255",2026-01-01,"Our company",239.99
+82,"Withings ScanWatch 2",2026-01-01,Ebay,358.00
+83,"Withings ScanWatch 2",2026-01-01,"Our company",129.99
+84,"Apple Watch Ultra 2",2026-01-05,Ebay,579.00
+85,"Apple Watch Ultra 2",2026-01-05,"Our company",839.99
+86,"Apple Watch Ultra",2026-01-05,Ebay,658.00
+87,"Apple Watch Ultra",2026-01-05,"Our company",689.99
+88,"Garmin Epix™ Pro Gen 2",2026-01-05,Ebay,759.00
+89,"Garmin Epix™ Pro Gen 2",2026-01-05,"Our company",699.99
+90,"Garmin Venu 3S",2026-01-05,Ebay,379.99
+91,"Garmin Venu 3S",2026-01-05,"Our company",389.99
+92,"Garmin Venu 3",2026-01-05,Ebay,359.99
+93,"Garmin Venu 3",2026-01-05,"Our company",409.99
+94,"Garmin fēnix® 7X Pro",2026-01-05,Ebay,520.00
+95,"Garmin fēnix® 7X Pro",2026-01-05,"Our company",699.99
+96,"Garmin fēnix® 7 Pro",2026-01-05,Ebay,1099.80
+97,"Garmin fēnix® 7 Pro",2026-01-05,"Our company",619.99
+98,"Garmin Forerunner 965",2026-01-05,Ebay,887.90
+99,"Garmin Forerunner 965",2026-01-05,"Our company",559.99
+100,"Garmin Forerunner 255",2026-01-05,Ebay,219.50
+101,"Garmin Forerunner 255",2026-01-05,"Our company",239.99
+102,"Withings ScanWatch 2",2026-01-05,Ebay,358.00
+103,"Withings ScanWatch 2",2026-01-05,"Our company",129.99
+184,"Apple Watch Ultra 2",2026-01-03,Idealo,689.99
+185,"Apple Watch Ultra 2",2026-01-03,"Our company",839.99
+186,"Apple Watch Ultra",2026-01-03,Idealo,779.95
+187,"Apple Watch Ultra",2026-01-03,"Our company",689.99
+188,"Garmin Epix™ Pro Gen 2",2026-01-03,Idealo,479.00
+189,"Garmin Epix™ Pro Gen 2",2026-01-03,"Our company",699.99
+190,"Garmin Venu 3S",2026-01-03,Idealo,329.90
+191,"Garmin Venu 3S",2026-01-03,"Our company",389.99
+192,"Garmin Venu 3",2026-01-03,Idealo,338.00
+193,"Garmin Venu 3",2026-01-03,"Our company",409.99
+194,"Garmin fēnix® 7X Pro",2026-01-03,Idealo,533.90
+195,"Garmin fēnix® 7X Pro",2026-01-03,"Our company",699.99
+196,"Garmin fēnix® 7 Pro",2026-01-03,Idealo,399.00
+197,"Garmin fēnix® 7 Pro",2026-01-03,"Our company",619.99
+198,"Garmin Forerunner 965",2026-01-03,Idealo,472.00
+199,"Garmin Forerunner 965",2026-01-03,"Our company",559.99
+200,"Garmin Forerunner 255",2026-01-03,Idealo,199.90
+201,"Garmin Forerunner 255",2026-01-03,"Our company",239.99
+202,"Withings ScanWatch 2",2026-01-03,Idealo,276.99
+203,"Withings ScanWatch 2",2026-01-03,"Our company",129.99
+205,"Apple Watch Ultra 2",2026-01-07,"Our company",839.99
+207,"Apple Watch Ultra",2026-01-07,"Our company",689.99
+209,"Garmin Epix™ Pro Gen 2",2026-01-07,"Our company",699.99
+211,"Garmin Venu 3S",2026-01-07,"Our company",389.99
+213,"Garmin Venu 3",2026-01-07,"Our company",409.99
+215,"Garmin fēnix® 7X Pro",2026-01-07,"Our company",699.99
+217,"Garmin fēnix® 7 Pro",2026-01-07,"Our company",619.99
+219,"Garmin Forerunner 965",2026-01-07,"Our company",559.99
+221,"Garmin Forerunner 255",2026-01-07,"Our company",239.99
+223,"Withings ScanWatch 2",2026-01-07,"Our company",129.99
+244,"Apple Watch Ultra 2",2026-01-07,Amazon,962.00
+245,"Garmin Epix™ Pro Gen 2",2026-01-07,Amazon,660.00
+246,"Garmin Venu 3S",2026-01-07,Amazon,340.00
+247,"Garmin Venu 3",2026-01-07,Amazon,338.00
+248,"Garmin fēnix® 7X Pro",2026-01-07,Amazon,550.00
+249,"Garmin fēnix® 7 Pro",2026-01-07,Amazon,729.00
+250,"Garmin Forerunner 965",2026-01-07,Amazon,569.00
+251,"Garmin Forerunner 255",2026-01-07,Amazon,414.00
+252,"Withings ScanWatch 2",2026-01-07,Amazon,314.00
+317,"Apple Watch Ultra",2026-01-07,Amazon,666.00
+467,"Apple Watch Ultra 2",2026-01-07,Ebay,579.00
+468,"Apple Watch Ultra",2026-01-07,Ebay,658.00
+469,"Garmin Epix™ Pro Gen 2",2026-01-07,Ebay,759.00
+470,"Garmin Venu 3S",2026-01-07,Ebay,379.99
+471,"Garmin Venu 3",2026-01-07,Ebay,359.99
+472,"Garmin fēnix® 7X Pro",2026-01-07,Ebay,520.00
+473,"Garmin fēnix® 7 Pro",2026-01-07,Ebay,1099.80
+474,"Garmin Forerunner 965",2026-01-07,Ebay,443.95
+475,"Garmin Forerunner 255",2026-01-07,Ebay,219.50
+476,"Withings ScanWatch 2",2026-01-07,Ebay,358.00
+477,"Apple Watch Ultra",2026-01-07,Idealo,779.95
+478,"Garmin Epix™ Pro Gen 2",2026-01-07,Idealo,479.00
+479,"Garmin Venu 3S",2026-01-07,Idealo,340.00
+480,"Garmin Venu 3",2026-01-07,Idealo,338.00
+481,"Garmin fēnix® 7X Pro",2026-01-07,Idealo,549.00
+482,"Garmin fēnix® 7 Pro",2026-01-07,Idealo,399.00
+483,"Garmin Forerunner 965",2026-01-07,Idealo,489.00
+484,"Garmin Forerunner 255",2026-01-07,Idealo,196.99
+485,"Withings ScanWatch 2",2026-01-07,Idealo,279.95
+486,"Apple Watch Ultra 2",2026-01-07,Idealo,689.99
+487,"Apple Watch Ultra 2",2026-01-10,Amazon,962.00
+488,"Apple Watch Ultra 2",2026-01-10,"Our company",839.99
+489,"Apple Watch Ultra",2026-01-10,Amazon,666.00
+490,"Apple Watch Ultra",2026-01-10,"Our company",689.99
+491,"Garmin Epix™ Pro Gen 2",2026-01-10,Amazon,642.00
+492,"Garmin Epix™ Pro Gen 2",2026-01-10,"Our company",699.99
+493,"Garmin Venu 3S",2026-01-10,Amazon,340.00
+494,"Garmin Venu 3S",2026-01-10,"Our company",389.99
+495,"Garmin Venu 3",2026-01-10,Amazon,338.00
+496,"Garmin Venu 3",2026-01-10,"Our company",409.99
+497,"Garmin fēnix® 7X Pro",2026-01-10,Amazon,550.00
+498,"Garmin fēnix® 7X Pro",2026-01-10,"Our company",699.99
+499,"Garmin fēnix® 7 Pro",2026-01-10,Amazon,337.00
+500,"Garmin fēnix® 7 Pro",2026-01-10,"Our company",619.99
+501,"Garmin Forerunner 965",2026-01-10,Amazon,569.00
+502,"Garmin Forerunner 965",2026-01-10,"Our company",559.99
+503,"Garmin Forerunner 255",2026-01-10,Amazon,414.00
+504,"Garmin Forerunner 255",2026-01-10,"Our company",239.99
+505,"Withings ScanWatch 2",2026-01-10,Amazon,309.00
+506,"Withings ScanWatch 2",2026-01-10,"Our company",129.99
+507,"Apple Watch Ultra 2",2026-01-10,Ebay,1158.00
+508,"Apple Watch Ultra",2026-01-10,Ebay,658.00
+509,"Garmin Epix™ Pro Gen 2",2026-01-10,Ebay,759.00
+510,"Garmin Venu 3S",2026-01-10,Ebay,379.99
+511,"Garmin Venu 3",2026-01-10,Ebay,359.99
+512,"Garmin fēnix® 7X Pro",2026-01-10,Ebay,520.00
+513,"Garmin fēnix® 7 Pro",2026-01-10,Ebay,433.00
+514,"Garmin Forerunner 965",2026-01-10,Ebay,450.90
+515,"Garmin Forerunner 255",2026-01-10,Ebay,439.00
+516,"Withings ScanWatch 2",2026-01-10,Ebay,358.00
+517,"Apple Watch Ultra 2",2026-01-10,Idealo,689.99
+518,"Apple Watch Ultra",2026-01-10,Idealo,779.95
+519,"Garmin Epix™ Pro Gen 2",2026-01-10,Idealo,479.00
+520,"Garmin Venu 3S",2026-01-10,Idealo,340.00
+521,"Garmin Venu 3",2026-01-10,Idealo,337.90
+522,"Garmin fēnix® 7X Pro",2026-01-10,Idealo,549.08
+523,"Garmin fēnix® 7 Pro",2026-01-10,Idealo,399.00
+524,"Garmin Forerunner 965",2026-01-10,Idealo,489.00
+525,"Garmin Forerunner 255",2026-01-10,Idealo,196.99
+526,"Withings ScanWatch 2",2026-01-10,Idealo,269.99
+587,"Apple Watch Ultra 2",2026-01-11,Amazon,962.04
+588,"Apple Watch Ultra 2",2026-01-11,"Our company",839.99
+589,"Apple Watch Ultra",2026-01-11,Amazon,654.14
+590,"Apple Watch Ultra",2026-01-11,"Our company",689.99
+591,"Garmin Epix™ Pro Gen 2",2026-01-11,Amazon,642.73
+592,"Garmin Epix™ Pro Gen 2",2026-01-11,"Our company",699.99
+593,"Garmin Venu 3S",2026-01-11,Amazon,340.00
+594,"Garmin Venu 3S",2026-01-11,"Our company",389.99
+595,"Garmin Venu 3",2026-01-11,Amazon,338.00
+596,"Garmin Venu 3",2026-01-11,"Our company",409.99
+597,"Garmin fēnix® 7X Pro",2026-01-11,Amazon,549.76
+598,"Garmin fēnix® 7X Pro",2026-01-11,"Our company",699.99
+599,"Garmin fēnix® 7 Pro",2026-01-11,Amazon,337.90
+600,"Garmin fēnix® 7 Pro",2026-01-11,"Our company",619.99
+601,"Garmin Forerunner 965",2026-01-11,Amazon,569.99
+602,"Garmin Forerunner 965",2026-01-11,"Our company",559.99
+603,"Garmin Forerunner 255",2026-01-11,Amazon,414.48
+604,"Garmin Forerunner 255",2026-01-11,"Our company",239.99
+605,"Withings ScanWatch 2",2026-01-11,Amazon,310.99
+606,"Withings ScanWatch 2",2026-01-11,"Our company",129.99
+607,"Apple Watch Ultra 2",2026-01-11,Ebay,1158.00
+608,"Apple Watch Ultra",2026-01-11,Ebay,658.00
+609,"Garmin Epix™ Pro Gen 2",2026-01-11,Ebay,759.00
+610,"Garmin Venu 3S",2026-01-11,Ebay,379.99
+611,"Garmin Venu 3",2026-01-11,Ebay,359.99
+612,"Garmin fēnix® 7X Pro",2026-01-11,Ebay,520.00
+613,"Garmin fēnix® 7 Pro",2026-01-11,Ebay,433.00
+614,"Garmin Forerunner 965",2026-01-11,Ebay,443.95
+615,"Garmin Forerunner 255",2026-01-11,Ebay,439.00
+616,"Withings ScanWatch 2",2026-01-11,Ebay,358.00
+617,"Apple Watch Ultra 2",2026-01-11,Idealo,689.99
+618,"Apple Watch Ultra",2026-01-11,Idealo,779.95
+619,"Garmin Epix™ Pro Gen 2",2026-01-11,Idealo,479.00
+620,"Garmin Venu 3S",2026-01-11,Idealo,340.00
+621,"Garmin Venu 3",2026-01-11,Idealo,337.90
+622,"Garmin fēnix® 7X Pro",2026-01-11,Idealo,548.76
+623,"Garmin fēnix® 7 Pro",2026-01-11,Idealo,399.00
+624,"Garmin Forerunner 965",2026-01-11,Idealo,489.00
+625,"Garmin Forerunner 255",2026-01-11,Idealo,196.99
+626,"Withings ScanWatch 2",2026-01-11,Idealo,269.99
+697,"Apple Watch Ultra 2",2026-01-12,Amazon,945.63
+698,"Apple Watch Ultra",2026-01-12,Amazon,654.14
+699,"Garmin Epix™ Pro Gen 2",2026-01-12,Amazon,642.73
+700,"Garmin Venu 3S",2026-01-12,Amazon,340.00
+701,"Garmin Venu 3",2026-01-12,Amazon,338.00
+702,"Garmin fēnix® 7X Pro",2026-01-12,Amazon,553.19
+703,"Garmin fēnix® 7 Pro",2026-01-12,Amazon,337.90
+704,"Garmin Forerunner 965",2026-01-12,Amazon,569.99
+705,"Garmin Forerunner 255",2026-01-12,Amazon,414.48
+706,"Withings ScanWatch 2",2026-01-12,Amazon,310.99
+707,"Apple Watch Ultra 2",2026-01-12,Ebay,1158.00
+708,"Apple Watch Ultra",2026-01-12,Ebay,658.00
+709,"Garmin Epix™ Pro Gen 2",2026-01-12,Ebay,759.00
+710,"Garmin Venu 3S",2026-01-12,Ebay,379.99
+711,"Garmin Venu 3",2026-01-12,Ebay,359.99
+712,"Garmin fēnix® 7X Pro",2026-01-12,Ebay,520.00
+713,"Garmin fēnix® 7 Pro",2026-01-12,Ebay,433.00
+714,"Garmin Forerunner 965",2026-01-12,Ebay,443.95
+715,"Garmin Forerunner 255",2026-01-12,Ebay,439.00
+716,"Withings ScanWatch 2",2026-01-12,Ebay,358.00
+717,"Apple Watch Ultra 2",2026-01-12,Idealo,689.99
+718,"Apple Watch Ultra",2026-01-12,Idealo,779.95
+719,"Garmin Epix™ Pro Gen 2",2026-01-12,Idealo,479.00
+740,"Garmin Venu 3S",2026-01-12,Idealo,340.00
+741,"Garmin Venu 3",2026-01-12,Idealo,337.90
+742,"Garmin fēnix® 7X Pro",2026-01-12,Idealo,549.00
+743,"Garmin fēnix® 7 Pro",2026-01-12,Idealo,399.00
+744,"Garmin Forerunner 965",2026-01-12,Idealo,489.00
+745,"Garmin Forerunner 255",2026-01-12,Idealo,199.99
+746,"Withings ScanWatch 2",2026-01-12,Idealo,279.95
+747,"Apple Watch Ultra 2",2026-01-12,"Our company",839.99
+748,"Apple Watch Ultra",2026-01-12,"Our company",689.99
+749,"Garmin Epix™ Pro Gen 2",2026-01-12,"Our company",699.99
+750,"Garmin Venu 3S",2026-01-12,"Our company",389.99
+751,"Garmin Venu 3",2026-01-12,"Our company",409.99
+752,"Garmin fēnix® 7X Pro",2026-01-12,"Our company",699.99
+753,"Garmin fēnix® 7 Pro",2026-01-12,"Our company",619.99
+754,"Garmin Forerunner 965",2026-01-12,"Our company",559.99
+755,"Garmin Forerunner 255",2026-01-12,"Our company",239.99
+756,"Withings ScanWatch 2",2026-01-12,"Our company",129.99
+757,"Apple Watch Ultra 2",2026-01-24,Amazon,912.83
+758,"Apple Watch Ultra",2026-01-24,Amazon,630.34
+759,"Garmin Epix™ Pro Gen 2",2026-01-24,Amazon,677.06
+760,"Garmin Venu 3S",2026-01-24,Amazon,313.00
+761,"Garmin Venu 3",2026-01-24,Amazon,341.00
+762,"Garmin fēnix® 7X Pro",2026-01-24,Amazon,488.61
+763,"Garmin fēnix® 7 Pro",2026-01-24,Amazon,484.95
+764,"Garmin Forerunner 965",2026-01-24,Amazon,499.00
+765,"Garmin Forerunner 255",2026-01-24,Amazon,349.00
+766,"Withings ScanWatch 2",2026-01-24,Amazon,303.17
+767,"Apple Watch Ultra 2",2026-01-24,Ebay,1158.00
+768,"Apple Watch Ultra",2026-01-24,Ebay,658.00
+769,"Garmin Epix™ Pro Gen 2",2026-01-24,Ebay,759.00
+770,"Garmin Venu 3S",2026-01-24,Ebay,299.99
+771,"Garmin Venu 3",2026-01-24,Ebay,359.99
+772,"Garmin fēnix® 7X Pro",2026-01-24,Ebay,520.00
+773,"Garmin fēnix® 7 Pro",2026-01-24,Ebay,458.99
+774,"Garmin Forerunner 965",2026-01-24,Ebay,1274.80
+775,"Garmin Forerunner 255",2026-01-24,Ebay,439.00
+776,"Withings ScanWatch 2",2026-01-24,Ebay,358.00
+777,"Apple Watch Ultra 2",2026-01-24,Idealo,697.00
+778,"Apple Watch Ultra",2026-01-24,Idealo,1036.25
+779,"Garmin Epix™ Pro Gen 2",2026-01-24,Idealo,499.00
+780,"Garmin Venu 3S",2026-01-24,Idealo,304.90
+781,"Garmin Venu 3",2026-01-24,Idealo,333.00
+782,"Garmin fēnix® 7X Pro",2026-01-24,Idealo,488.61
+783,"Garmin fēnix® 7 Pro",2026-01-24,Idealo,458.99
+784,"Garmin Forerunner 965",2026-01-24,Idealo,489.00
+785,"Garmin Forerunner 255",2026-01-24,Idealo,199.99
+786,"Withings ScanWatch 2",2026-01-24,Idealo,279.95
+787,"Apple Watch Ultra 2",2026-01-24,"Our company",839.99
+788,"Apple Watch Ultra",2026-01-24,"Our company",689.99
+789,"Garmin Epix™ Pro Gen 2",2026-01-24,"Our company",699.99
+790,"Garmin Venu 3S",2026-01-24,"Our company",389.99
+791,"Garmin Venu 3",2026-01-24,"Our company",409.99
+792,"Garmin fēnix® 7X Pro",2026-01-24,"Our company",699.99
+793,"Garmin fēnix® 7 Pro",2026-01-24,"Our company",619.99
+794,"Garmin Forerunner 965",2026-01-24,"Our company",559.99
+795,"Garmin Forerunner 255",2026-01-24,"Our company",239.99
+796,"Withings ScanWatch 2",2026-01-24,"Our company",129.99
+797,"Apple Watch Ultra 2",2026-01-25,Amazon,912.83
+798,"Apple Watch Ultra",2026-01-25,Amazon,630.34
+799,"Garmin Epix™ Pro Gen 2",2026-01-25,Amazon,677.05
+800,"Garmin Venu 3S",2026-01-25,Amazon,313.00
+801,"Garmin Venu 3",2026-01-25,Amazon,341.00
+802,"Garmin fēnix® 7X Pro",2026-01-25,Amazon,488.61
+803,"Garmin fēnix® 7 Pro",2026-01-25,Amazon,484.95
+804,"Garmin Forerunner 965",2026-01-25,Amazon,499.00
+805,"Garmin Forerunner 255",2026-01-25,Amazon,569.58
+806,"Withings ScanWatch 2",2026-01-25,Amazon,306.84
+807,"Apple Watch Ultra 2",2026-01-25,Ebay,1158.00
+808,"Apple Watch Ultra",2026-01-25,Ebay,658.00
+809,"Garmin Epix™ Pro Gen 2",2026-01-25,Ebay,759.00
+810,"Garmin Venu 3S",2026-01-25,Ebay,299.99
+811,"Garmin Venu 3",2026-01-25,Ebay,359.99
+812,"Garmin fēnix® 7X Pro",2026-01-25,Ebay,520.00
+813,"Garmin fēnix® 7 Pro",2026-01-25,Ebay,445.00
+814,"Garmin Forerunner 965",2026-01-25,Ebay,1274.80
+815,"Garmin Forerunner 255",2026-01-25,Ebay,439.00
+816,"Withings ScanWatch 2",2026-01-25,Ebay,358.00
+817,"Apple Watch Ultra 2",2026-01-25,Idealo,697.00
+818,"Apple Watch Ultra",2026-01-25,Idealo,1036.25
+819,"Garmin Epix™ Pro Gen 2",2026-01-25,Idealo,499.00
+820,"Garmin Venu 3S",2026-01-25,Idealo,304.90
+821,"Garmin Venu 3",2026-01-25,Idealo,333.00
+822,"Garmin fēnix® 7X Pro",2026-01-25,Idealo,488.61
+823,"Garmin fēnix® 7 Pro",2026-01-25,Idealo,445.00
+824,"Garmin Forerunner 965",2026-01-25,Idealo,489.00
+825,"Garmin Forerunner 255",2026-01-25,Idealo,199.99
+826,"Withings ScanWatch 2",2026-01-25,Idealo,279.95
+827,"Apple Watch Ultra 2",2026-01-25,"Our company",839.99
+828,"Apple Watch Ultra",2026-01-25,"Our company",689.99
+829,"Garmin Epix™ Pro Gen 2",2026-01-25,"Our company",699.99
+830,"Garmin Venu 3S",2026-01-25,"Our company",389.99
+831,"Garmin Venu 3",2026-01-25,"Our company",409.99
+832,"Garmin fēnix® 7X Pro",2026-01-25,"Our company",699.99
+833,"Garmin fēnix® 7 Pro",2026-01-25,"Our company",619.99
+834,"Garmin Forerunner 965",2026-01-25,"Our company",559.99
+835,"Garmin Forerunner 255",2026-01-25,"Our company",239.99
+836,"Withings ScanWatch 2",2026-01-25,"Our company",129.99
+837,"Apple Watch Ultra 2",2026-01-26,Amazon,896.43
+838,"Apple Watch Ultra",2026-01-26,Amazon,618.43
+839,"Garmin Epix™ Pro Gen 2",2026-01-26,Amazon,677.00
+840,"Garmin Venu 3S",2026-01-26,Amazon,311.00
+841,"Garmin Venu 3",2026-01-26,Amazon,341.00
+842,"Garmin fēnix® 7X Pro",2026-01-26,Amazon,506.74
+843,"Garmin fēnix® 7 Pro",2026-01-26,Amazon,484.49
+844,"Garmin Forerunner 965",2026-01-26,Amazon,499.00
+845,"Garmin Forerunner 255",2026-01-26,Amazon,567.34
+846,"Withings ScanWatch 2",2026-01-26,Amazon,305.00
+847,"Apple Watch Ultra 2",2026-01-26,Ebay,1158.00
+848,"Apple Watch Ultra",2026-01-26,Ebay,329.00
+849,"Garmin Epix™ Pro Gen 2",2026-01-26,Ebay,499.00
+850,"Garmin Venu 3S",2026-01-26,Ebay,301.98
+851,"Garmin Venu 3",2026-01-26,Ebay,359.99
+852,"Garmin fēnix® 7X Pro",2026-01-26,Ebay,520.00
+853,"Garmin fēnix® 7 Pro",2026-01-26,Ebay,549.90
+854,"Garmin Forerunner 965",2026-01-26,Ebay,1274.80
+855,"Garmin Forerunner 255",2026-01-26,Ebay,439.00
+856,"Withings ScanWatch 2",2026-01-26,Ebay,358.00
+857,"Apple Watch Ultra 2",2026-01-26,Idealo,697.00
+858,"Apple Watch Ultra",2026-01-26,Idealo,1036.25
+859,"Garmin Epix™ Pro Gen 2",2026-01-26,Idealo,499.00
+860,"Garmin Venu 3S",2026-01-26,Idealo,299.90
+861,"Garmin Venu 3",2026-01-26,Idealo,339.00
+862,"Garmin fēnix® 7X Pro",2026-01-26,Idealo,455.66
+863,"Garmin fēnix® 7 Pro",2026-01-26,Idealo,458.99
+864,"Garmin Forerunner 965",2026-01-26,Idealo,489.00
+865,"Garmin Forerunner 255",2026-01-26,Idealo,199.99
+866,"Withings ScanWatch 2",2026-01-26,Idealo,279.95
+867,"Apple Watch Ultra 2",2026-01-26,"Our company",839.99
+868,"Apple Watch Ultra",2026-01-26,"Our company",689.99
+869,"Garmin Epix™ Pro Gen 2",2026-01-26,"Our company",699.99
+870,"Garmin Venu 3S",2026-01-26,"Our company",389.99
+871,"Garmin Venu 3",2026-01-26,"Our company",409.99
+872,"Garmin fēnix® 7X Pro",2026-01-26,"Our company",699.99
+873,"Garmin fēnix® 7 Pro",2026-01-26,"Our company",619.99
+874,"Garmin Forerunner 965",2026-01-26,"Our company",559.99
+875,"Garmin Forerunner 255",2026-01-26,"Our company",239.99
+876,"Withings ScanWatch 2",2026-01-26,"Our company",129.99
