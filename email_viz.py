@@ -195,70 +195,97 @@ def send_email(subject: str, html_body: str, pdf_path: str):
 
 # MAIN EMAIL LOGIC
 def check_and_email(result_df: pd.DataFrame, pdf_path: str):
-    all_dates = sorted(result_df["Date"].unique(), reverse=True)
+    all_dates = sorted(result_df["Date"].dropna().unique(), reverse=True)
     if len(all_dates) < 1:
         print("No dates in results. No email.", flush=True)
         return
 
-    today = all_dates[0]
-    yesterday = all_dates[1] if len(all_dates) >= 2 else None
+    today = pd.to_datetime(all_dates[0])
+    yesterday = pd.to_datetime(all_dates[1]) if len(all_dates) >= 2 else None
+
+    print("Comparing dates:", today.date(), "vs", (yesterday.date() if yesterday is not None else None), flush=True)
 
     df_today = result_df[result_df["Date"] == today].copy()
     df_yest = result_df[result_df["Date"] == yesterday].copy() if yesterday is not None else pd.DataFrame()
 
-    # Determine "alerts"
     rank_changed_products = []
     price_changed_products = []
 
+    # Only compute comparisons if we have yesterday
     if yesterday is not None and not df_yest.empty:
-        merged = df_today.merge(df_yest, on="Product", how="left", suffixes=("_today", "_yest"))
+        merged = df_today.merge(df_yest, on="Product", how="outer", suffixes=("_today", "_yest"))
 
-        # rank changes
+        # rank changes (safe)
         for _, row in merged.iterrows():
-            rt, ry = row.get("our_rank_today"), row.get("our_rank_yest")
-            if pd.notna(rt) and pd.notna(ry) and int(rt) != int(ry):
-                rank_changed_products.append((row["Product"], int(ry), int(rt)))
+            rt = row.get("our_rank_today")
+            ry = row.get("our_rank_yest")
+
+            if pd.notna(rt) and pd.notna(ry):
+                rt_i, ry_i = int(rt), int(ry)
+                if rt_i != ry_i:
+                    direction = "Improved ✅" if rt_i < ry_i else "Worsened ⚠️"
+                    rank_changed_products.append((row["Product"], ry_i, rt_i, direction))
 
         # price changes (optional)
         if PRICE_CHANGE_PCT_TRIGGER is not None:
             for _, row in merged.iterrows():
-                pt, py = row.get("our_price_today"), row.get("our_price_yest")
+                pt = row.get("our_price_today")
+                py = row.get("our_price_yest")
                 if pd.notna(pt) and pd.notna(py) and float(py) != 0:
                     pct = (float(pt) - float(py)) / float(py) * 100.0
                     if abs(pct) >= float(PRICE_CHANGE_PCT_TRIGGER):
                         price_changed_products.append((row["Product"], float(py), float(pt), pct))
 
-    # Create teacher-friendly email body
+    # Build summary table for today (still useful even if rank-change is empty)
     summary_table_html = build_summary_table(df_today)
 
     highlights = []
-    # highlight not in top N
+
+    # --- ALWAYS include rank change section (teacher request) ---
+    if yesterday is None:
+        highlights.append("<p><b>📈 Rank changes:</b> Not available (only 1 date in database).</p>")
+    elif rank_changed_products:
+        lines = "".join(
+            [f"<li><b>{p}</b>: {old} → {new} ({direction})</li>"
+             for p, old, new, direction in rank_changed_products]
+        )
+        highlights.append(
+            f"<p><b>📈 Rank changes ({yesterday.date()} → {today.date()}):</b></p><ul>{lines}</ul>"
+        )
+    else:
+        highlights.append(
+            f"<p><b>📈 Rank changes ({yesterday.date()} → {today.date()}):</b> None ✅</p>"
+        )
+
+    # --- top-N warning (optional but nice) ---
     bad = df_today[df_today["our_rank"].notna() & (df_today["our_rank"] > TOP_N_ALERT)]
     if not bad.empty:
-        highlights.append(f"<p><b> Not in top {TOP_N_ALERT}:</b> {', '.join(bad['Product'].tolist())}</p>")
-
-    # rank change section
-    if rank_changed_products:
-        lines = "".join(
-            [f"<li>{p}: {old} → {new}</li>" for p, old, new in rank_changed_products]
+        highlights.append(
+            f"<p><b>⚠️ Not in top {TOP_N_ALERT} today:</b> {', '.join(bad['Product'].tolist())}</p>"
         )
-        highlights.append(f"<p><b>📈 Rank changes since yesterday:</b></p><ul>{lines}</ul>")
 
-    # price change section
-    if price_changed_products:
-        lines = "".join(
-            [f"<li>{p}: {old:.2f} → {new:.2f} ({pct:+.1f}%)</li>"
-             for p, old, new, pct in price_changed_products]
-        )
-        highlights.append(f"<p><b> Significant price changes (≥ {PRICE_CHANGE_PCT_TRIGGER}%):</b></p><ul>{lines}</ul>")
+    # --- price change section (optional) ---
+    if PRICE_CHANGE_PCT_TRIGGER is not None:
+        if price_changed_products:
+            lines = "".join(
+                [f"<li><b>{p}</b>: {old:.2f} → {new:.2f} ({pct:+.1f}%)</li>"
+                 for p, old, new, pct in price_changed_products]
+            )
+            highlights.append(
+                f"<p><b>💰 Significant price changes (≥ {PRICE_CHANGE_PCT_TRIGGER}%):</b></p><ul>{lines}</ul>"
+            )
+        else:
+            highlights.append(
+                f"<p><b>💰 Significant price changes (≥ {PRICE_CHANGE_PCT_TRIGGER}%):</b> None</p>"
+            )
 
-    highlight_html = "".join(highlights) if highlights else "<p>No major alerts today.</p>"
+    highlight_html = "".join(highlights)
 
-    subject = f"Daily Price Report - {pd.to_datetime(today).strftime('%Y-%m-%d')}"
+    subject = f"Daily Price Report - {today.strftime('%Y-%m-%d')}"
     html_body = f"""
     <html>
       <body>
-        <h2>Daily Price Report ({pd.to_datetime(today).strftime('%Y-%m-%d')})</h2>
+        <h2>Daily Price Report ({today.strftime('%Y-%m-%d')})</h2>
         {highlight_html}
         <h3>Summary (min / avg / our price / our rank)</h3>
         {summary_table_html}
@@ -267,7 +294,7 @@ def check_and_email(result_df: pd.DataFrame, pdf_path: str):
     </html>
     """
 
-    # Decide whether to send
+    # Send policy: you can keep daily summary on
     should_send = SEND_DAILY_SUMMARY or bool(rank_changed_products) or bool(price_changed_products)
     print("Should send email?", should_send, flush=True)
 
@@ -275,5 +302,5 @@ def check_and_email(result_df: pd.DataFrame, pdf_path: str):
         send_email(subject, html_body, pdf_path)
     else:
         print("No alerts and daily summary disabled. No email sent.", flush=True)
-
 check_and_email(result, pdf_filename)
+
