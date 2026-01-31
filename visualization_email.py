@@ -23,7 +23,7 @@ def load_settings():
 
 settings = load_settings()
 
-# --- 2. DATABASE LOADING (Source: 21, 35) ---
+# --- 2. DATABASE LOADING ---
 db = mysql.connector.connect(
     host="localhost", 
     user="root",
@@ -36,7 +36,7 @@ df = pd.read_sql(query, db)
 db.close()
 df["Date"] = pd.to_datetime(df["Date"])
 
-# --- 3. METRICS & RANKING (Source: 48, 51) ---
+# --- 3. METRICS & RANKING ---
 result = (
     df.groupby(["Product","Date"], as_index=False)
       .apply(lambda x: pd.Series({
@@ -141,3 +141,4 @@ def send_final_email(analysis, date, pdf_path):
 
 # Run the check
 check_rank_and_email(result, pdf_filename)
+
