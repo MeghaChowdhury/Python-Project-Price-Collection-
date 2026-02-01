@@ -1,4 +1,4 @@
-import os
+dayimport os
 import pandas as pd
 import matplotlib.pyplot as plt
 import mysql.connector
@@ -36,7 +36,7 @@ df = pd.read_sql(query, db)
 db.close()
 df["Date"] = pd.to_datetime(df["Date"])
 
-# --- 3. METRICS & RANKING ---
+# -METRICS & RANKING ---
 result = (
     df.groupby(["Product","Date"], as_index=False)
       .apply(lambda x: pd.Series({
@@ -109,24 +109,31 @@ def check_rank_and_email(result_df, pdf_path):
 
     # The email is only sent if the rank has changed
     if rank_changed:
-        send_final_email(analysis, today, pdf_path)
+        send_final_email(analysis, today, yesterday, pdf_path)
 
-def send_final_email(analysis, date, pdf_path):
+def send_final_email(analysis, today, yesterday, pdf_path):
     msg = MIMEMultipart()
-    msg['Subject'] = f"Rank Change Notification - {date.strftime('%Y-%m-%d')}"
+    msg['Subject'] = f"Rank Change Notification - {today.strftime('%Y-%m-%d')}"
     msg['From'] = settings.get('smtp_user')
     msg['To'] = settings.get('recipients')
 
-    # Textual description of rank changes 
-    body = "Price Rank Change Detected:\n\n"
+    # email body
+    body = f"Rank changes detected between {yesterday.date()} and {today.date()}:\n\n"
+    body += f"{'Product':<25} {'Prev':<6} {'Curr':<6} {'Status'}\n"
+    body += "-" * 55 + "\n"
+    
     for item in analysis:
-        change_text = "Improved" if item['curr_rank'] < item['prev_rank'] else "Worsened"
-        if item['curr_rank'] != item['prev_rank']:
-            body += f"Product: {item['product']}\n"
-            body += f"Rank Change: {item['prev_rank']} -> {item['curr_rank']} ({change_text})\n\n"
+        rank_change = item['curr_rank'] - item['prev_rank']
+        status = "📉 Worsened" if rank_change > 0 else "📈 Improved" if rank_change < 0 else "✅ Stable"
+        body += f"{item['product'][:24]:<25} {item['prev_rank']:<6} {item['curr_rank']:<6} {status}\n"
+    
+    body += "\n" + "=" * 55 + "\n"
+    body += "See attached PDF for detailed price trend visualizations.\n"
+    body += f"\nReport generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
 
     msg.attach(MIMEText(body, 'plain'))
     
+    # Attach PDF
     with open(pdf_path, "rb") as f:
         part = MIMEBase("application", "octet-stream")
         part.set_payload(f.read())
@@ -134,11 +141,15 @@ def send_final_email(analysis, date, pdf_path):
         part.add_header("Content-Disposition", f"attachment; filename={os.path.basename(pdf_path)}")
         msg.attach(part)
 
+    # Send email
     with smtplib.SMTP(settings['smtp_server'], int(settings['smtp_port'])) as server:
         server.starttls()
         server.login(settings['smtp_user'], settings['smtp_password'])
         server.send_message(msg)
+    
+    print(f"✓ Email sent successfully to {settings.get('recipients')}")
 
 # Run the check
 check_rank_and_email(result, pdf_filename)
+
 
