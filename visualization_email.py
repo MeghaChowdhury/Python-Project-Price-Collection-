@@ -57,7 +57,6 @@ with PdfPages(pdf_filename) as pdf:
         temp = result[result["Product"] == product].sort_values("Date").copy()
         temp["Date_str"] = temp["Date"].dt.strftime("%d-%m-%Y")
         
-        # Creating the 3 specific plots 
         fig, axes = plt.subplots(3, 1, figsize=(12, 14))
         fig.suptitle(f"Price Analysis: {product}", fontsize=16, fontweight='bold')
 
@@ -66,19 +65,27 @@ with PdfPages(pdf_filename) as pdf:
         axes[0].plot(temp["Date_str"], temp["our_price"], marker="o", label="Our Price")
         axes[0].set_title("Minimal Price and Our Price")
         axes[0].legend()
+        ymax1 = max(temp["min_price"].max(), temp["our_price"].max()) * 1.1
+        axes[0].set_ylim(0, ymax1) 
 
         # PLOT 2: Average vs Our Price 
         axes[1].plot(temp["Date_str"], temp["avg_price"], marker="o", label="Average Price")
         axes[1].plot(temp["Date_str"], temp["our_price"], marker="o", label="Our Price")
         axes[1].set_title("Average Price and Our Price")
         axes[1].legend()
+        ymax2 = max(temp["avg_price"].max(), temp["our_price"].max()) * 1.1
+        axes[1].set_ylim(0, ymax2)
 
         # PLOT 3: The Rank of our price 
         axes[2].plot(temp["Date_str"], temp["our_rank"], marker="o", color='red')
         axes[2].invert_yaxis()
+        axes[2].set_yticks([1, 2, 3, 4])
+        axes[2].set_ylim(4.5, 0.5)
         axes[2].set_title("Our Price Rank Trend")
         
-        for ax in axes: ax.tick_params(axis="x", rotation=45)
+        for ax in axes: 
+            ax.tick_params(axis="x", rotation=45)
+            
         plt.tight_layout(rect=[0, 0, 1, 0.96])
         pdf.savefig()
         plt.close()
@@ -151,5 +158,6 @@ def send_final_email(analysis, today, yesterday, pdf_path):
 
 # Run the check
 check_rank_and_email(result, pdf_filename)
+
 
 
